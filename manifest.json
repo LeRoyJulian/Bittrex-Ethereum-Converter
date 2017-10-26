@@ -5,6 +5,6 @@
   "description": "Convert Prices on Bittrex.",
   "content_scripts": [{
     "js": ["jquery-3.2.1.min.js", "content.js"],
-    "matches": ["https://bittrex.com/Market/*"]
+    "matches": ["https://bittrex.com/Market/Index?MarketName=BTC-*"]
   }]
 }
