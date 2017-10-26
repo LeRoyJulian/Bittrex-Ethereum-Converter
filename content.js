@@ -1,6 +1,5 @@
 $('h1').css('padding-top', '18px').css('padding-bottom', '0px').after('<h2 class="converted-price"></h2>')    
 
-
 function convertPrice() {
   $.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=ETH').done(function(data) {
     var orig = parseFloat($('.base-market > span').first().text())
